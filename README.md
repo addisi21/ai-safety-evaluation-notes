@@ -26,7 +26,16 @@ This repository demonstrates public-facing safety evaluation notes for AI respon
 - `safety-review-checklist.md`: practical checklist for evaluating safety-sensitive AI outputs
 - `policy-edge-patterns.md`: common edge-case patterns and how to review them
 - `proof-pack.md`: completed public safety review examples with unsafe responses, severity labels, safer alternatives, and reviewer feedback
+- [data/safety_cases.json](data/safety_cases.json): structured safety cases with severity and decision labels
+- [scripts/summarize_safety_cases.py](scripts/summarize_safety_cases.py): dependency-free Python script for safety case summaries
+- [outputs/safety-review-log.md](outputs/safety-review-log.md): reviewer-readable safety review log
 
 ## Confidentiality Standard
 
 No real platform task content, internal policies, screenshots, private datasets, or client examples are included.
+
+## Run Locally
+
+```bash
+python scripts/summarize_safety_cases.py
+```
